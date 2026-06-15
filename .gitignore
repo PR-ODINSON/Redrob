@@ -1,0 +1,29 @@
+# ── Large data files (exceed GitHub 100MB limit) ──────────────────────────────
+data/candidates.jsonl
+data/candidates.jsonl.gz
+
+# ── Python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── HuggingFace model cache (downloaded separately via semantic_scorer.py) ────
+.cache/
+
+# ── IDE / OS files ────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Temporary analysis files ──────────────────────────────────────────────────
+signals_full.txt
+spec_full.txt
+debug_*.py

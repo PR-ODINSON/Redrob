@@ -1,0 +1,21 @@
+# Redrob Candidate Ranking Pipeline — Dependencies
+# Python 3.11+
+#
+# Install all: pip install -r requirements.txt
+# Pre-download the embedding model (requires network, do this once):
+#   python semantic_scorer.py
+# Then ranking runs fully offline.
+
+# Core ML / embeddings
+sentence-transformers==3.4.1
+torch==2.5.1           # CPU-only; install cpu variant to save space:
+                        # pip install torch==2.5.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
+# Numerical computation
+numpy==2.2.6
+
+# Document parsing
+python-docx==1.2.0
+
+# Standard library only beyond this point — no additional installs needed:
+#   json, csv, gzip, re, math, datetime, pathlib, argparse, time, dataclasses
